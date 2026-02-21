@@ -5,6 +5,8 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 dotenv.config();
+const PORT = process.env.PORT;
+mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 
